@@ -1,0 +1,233 @@
+html{
+    height:100%;
+}
+body{
+    height: 100%;
+    background-image: url('../img/aub.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+.scrollbar
+{
+    margin-left: 30px;
+    float: left;
+    height: 300px;
+    width: 65px;
+    background: #F5F5F5;
+    overflow-y: scroll;
+    margin-bottom: 25px;
+}
+::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar
+{
+    width: 12px;
+    background-color: rgba(30,95,195,.4);
+}
+
+::-webkit-scrollbar-thumb
+{
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: orange;
+}
+#container{
+    position: absolute;
+    left:50%;
+    top:50%;
+    width:25%;
+    min-width: 450px;
+    max-height: 850px;
+    border:1px solid rgba(0,0,0,.3);
+    background-color: rgba(30,95,195,.4);
+    font-family: Oswald;
+    text-align: center;
+    padding:10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 1px rgba(0,0,0,.4);
+    transform: translate(-50%,-50%);
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+#container img{
+    width:78%;
+    height:auto;
+    background-color: rgba(255,255,255,.2);
+    padding: 15px;
+    border-radius: 10px;
+}
+#container h1{
+    width: 100%;
+    font-size: 130pt;
+    margin: 0 auto;
+    line-height: 100pt;
+    color: white;
+}
+#container h3{
+    vertical-align: top;
+    font-size: 59pt;
+    margin: 0;
+    color:white;
+}
+#container h3 span{
+    color: orange;
+}
+#container .input-field{
+    width:95%;
+    height:50px;
+    margin: 5px auto;
+    padding: 5px;
+    font-size:12pt;
+    text-align: center;
+    border-radius: 10px;
+}
+#container .input-field:hover{
+    border: 2px solid lightblue;
+}
+#container .input-field:focus{
+    border: 2px solid blue;
+}
+#container .btn-wide, #container .btn-wide2{
+    width:98%;
+    height:50px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 12pt;
+    background-color: #ffa500;
+    border:none;
+    margin: 5px auto;
+    padding: 5px;
+    color: rgba(0,0,0,.5);
+    border-radius: 10px;
+}
+#container .btn-wide2{
+    background-color: #ff7f7f;
+}
+#container .btn-wide2:hover{
+    background-color: #ff4c4c;
+}
+#container .btn-wide2:active{
+    background-color: #ff1919;
+}
+#container .btn-wide:hover{
+    background-color: #e59400;
+}
+#container .btn-wide:active{
+    background-color: #b77600;
+}
+a{
+    font-family: Oswald;
+    margin: 5px;
+    display: block;
+    text-align: center;
+    color:lightblue;
+    text-decoration: overline;
+}
+a:hover{
+    color:white;
+}
+@media only screen
+and (max-device-width : 900px) {
+    body{
+        background-size: auto;
+    }
+    #container{
+        width:85%;
+        max-height: 1250px;
+    }
+    #container .input-field{
+        height:100pt;
+        font-size: 250%;
+    }
+    #container img{
+        display: none;
+    }
+    #container h1{
+        margin-top:60pt;
+        font-size: 1600%;
+    }
+    #container h3{
+        font-size: 740%;
+        margin-top:40pt;
+    }
+    #container .btn-wide, #container .btn-wide2{
+        height: 100pt;
+        width: 97%;
+        font-size: 250%;
+    }
+}
+    h3#redirect{
+        text-align: center;
+        color:#ff4c4c;
+        font-size: 175%;
+}
+    #textFieldInput{
+        float:left;
+        width:40%;
+    }
+    #textFieldButton{
+        float:right;
+        width:40%;
+
+    }
+table#resultTable {
+  border: 2px solid #0B47A4;
+  background-color: #EEE7DB;
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+}
+table#resultTable td, table#resultTable th {
+  border: 1px solid #AAAAAA;
+  padding: 3px 2px;
+}
+table#resultTable tbody td {
+  font-size: 13px;
+  color: #313332;
+}
+table#resultTable tr:nth-child(even) {
+  background: #3375F5;
+}
+table#resultTable thead {
+  background: #3344A4;
+}
+table#resultTable thead th {
+  font-size: 19px;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-align: center;
+  border-left: 2px solid #A4A4A4;
+}
+table#resultTable thead th:first-child {
+  border-left: none;
+}
+
+table#resultTable tfoot {
+  font-size: 13px;
+  font-weight: bold;
+  color: #FFFFFF;
+  background: #2B31A4;
+}
+table#resultTable tfoot td {
+  font-size: 13px;
+}
+table#resultTable tfoot .links {
+  text-align: right;
+}
+table#resultTable tfoot .links a{
+  display: inline-block;
+  background: #FFFFFF;
+  color: #2E5685;
+  padding: 2px 8px;
+  border-radius: 5px;
+}
